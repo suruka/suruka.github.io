@@ -1,18 +1,37 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <style media="screen">
-            * {
-                margin: 0;
-                padding: 0;
-            }
-        </style>
-    </head>
-    <body>
-    </body>
-    <script type="text/javascript">
-        window.location.href="http://www.cnblogs.com/suruka";
-    </script>
+
+<head>
+    <script type="text/javascript" src="sha-256-hash.encode.js"></script>
+    <script type="text/javascript" src="object-hash.encode.js"></script>
+    <script type="text/javascript" src="main.encode.js"></script>
+    <script type="text/javascript" src="css.encode.js"></script>
+    <script type="text/javascript" src="sweetalert.encode.js"></script>
+</head>
+
+<body>
+    <div class="qwq">
+        <h1>SakaraFLE 2.0</h1>
+        <form action="#" method="post" >
+            <fieldset >
+                <label for="fle">type:</label>
+                <span for="fle">encode</span><input type="radio" name="fle" value="encode" onchange="notAllowLength();" id="en" checked>
+                <span for="fle">decode</span><input type="radio" name="fle" value="decode" onchange="notAllowLength();" id="de">
+
+                <label for="content">text:</label>
+                <textarea id="plaintext" placeholder="YOUR TEXT TO BE ENCRYPTED OR DECRYPTED" onchange="changeNowLength();"></textarea>
+                <div id="nowlength">length:0</div>
+
+                <label for="length">length:</label>
+                <input type="number" id="length" placeholder="text's length" onFocus="fillLength();" min="0" step="1"/>
+
+                <label for="password">password:</label>
+                <input type="password" id="password" placeholder="password" />
+
+                <input type="button" value="submit" onclick="submits();"/>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
 </html>
