@@ -6,18 +6,19 @@
     <script type="text/javascript" src="main.encode.js"></script>
     <script type="text/javascript" src="z.encode.js"></script>
     <script type="text/javascript" src="css.encode.js"></script>
-    <script type="text/javascript" src="sweetalert.encode.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 
 <body>
     <div class="qwq">
-        <h1>SakaraFLE 2.1</h1>
+        <h1>SakaraFLE 2.0</h1>
         <form action="#" method="post" >
             <fieldset >
                 <label for="fle">type:</label>
+                
                 <span for="fle">encode</span><input type="radio" name="fle" value="encode" onchange="notAllowLength();" id="en" checked>
                 <span for="fle">decode</span><input type="radio" name="fle" value="decode" onchange="notAllowLength();" id="de">
-
+                <br/>
                 <label for="hide">hide-text:</label>
                 <span for="hide">&nbsp;&nbsp;&nbsp;&nbsp;show</span><input type="radio" name="hide" value="SHOW" id="SHOW" checked>
                 <span for="hide">hide</span><input type="radio" name="hide" value="HIdE" id="HIdE">
@@ -31,11 +32,10 @@
 
                 <label for="length">length:</label>
                 <input type="number" id="length" placeholder="text's length" onFocus="fillLength();" min="0" step="1"/>
-
                 <label for="password">password:</label>
                 <input type="password" id="password" placeholder="password" />
 
-                <input type="button" value="submit" onclick='swal("Encoding...", {icon: "loading.gif",closeOnClickOutside: false,button: false,});submits();'/>
+                <input type="button" value="submit" class="red" onclick='submits();'></input>
 
             </fieldset>
         </form>
