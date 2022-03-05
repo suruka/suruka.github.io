@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>SakaraFLE - By Suruka</title>
+    <script type="text/javascript" src="sha-256-hash.encode.js"></script>
+    <script type="text/javascript" src="object-hash.encode.js"></script>
+    <script type="text/javascript" src="main.encode.js"></script>
+    <script type="text/javascript" src="a.encode.js"></script>
+    <script type="text/javascript" src="css.encode.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/sweetalert2@9"></script>
+    <style>
+        .AKSSH114514{
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="qwq">
+        <h1>SakaraFLE 2.3</h1>
+        <form action="#" method="post" >
+            <fieldset >
+                <label for="fle">type:</label>
+                
+                <span for="fle">encode</span><input type="radio" name="fle" value="encode" onchange="notAllowLength();" id="en" checked>
+                <span for="fle">decode</span><input type="radio" name="fle" value="decode" onchange="notAllowLength();" id="de">
+                <br/>
+                <label for="hide">hide-text:</label>
+                <span for="hide">&nbsp;&nbsp;&nbsp;&nbsp;show</span><input type="radio" name="hide" value="SHOW" id="SHOW" checked>
+                <span for="hide">hide</span><input type="radio" name="hide" value="HIdE" id="HIdE">
+                <div class="ls">
+                    * : choose "HIDE" to make all characters invisible
+                </div>
+
+                <label for="content">text:</label>
+                <textarea id="plaintext" placeholder="YOUR TEXT TO BE ENCRYPTED OR DECRYPTED" onchange="changeNowLength();"></textarea>
+                <div id="nowlength" class="smalll">length:0</div>
+
+                <label for="length">length:</label>
+                <input type="number" id="length" placeholder="text's length" onFocus="fillLength();" min="0" step="1"/>
+                <label for="password">password:</label>
+                <input type="password" id="password" placeholder="password" />
+
+                <input type="button" value="submit" class="red" onclick='try{submits();}catch(ex){Swal.fire({imageUrl:"error.gif",imageWidth:200,text:"Unknown Error!",title:"Oops",});}'></input>
+
+            </fieldset>
+        </form>
+    </div>
+    <img class="AKSSH114514" src="error.gif" />
+    <img class="AKSSH114514" src="loading.gif" />
+    <img class="AKSSH114514" src="success.gif" />
+</body>
+
+</html>
